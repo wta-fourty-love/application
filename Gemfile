@@ -3,8 +3,16 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.3"
+# Rails Core libraries:
+gem 'activerecord', '7.0.3'
+gem 'activemodel', '7.0.3'
+gem 'actionpack', '7.0.3'
+gem 'actiontext', '7.0.3'
+gem 'activejob', '7.0.3'
+gem 'activestorage', '7.0.3'
+gem 'activesupport', '7.0.3'
+gem 'actionview', '7.0.3'
+gem 'railties', '7.0.3'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
@@ -24,7 +32,6 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]

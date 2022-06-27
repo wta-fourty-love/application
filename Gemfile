@@ -6,7 +6,6 @@ ruby "3.1.2"
 # Rails Core libraries:
 gem 'activerecord', '7.0.3'
 gem 'activemodel', '7.0.3'
-gem 'actioncable', '7.0.3'
 gem 'actionpack', '7.0.3'
 gem 'actionmailbox', '7.0.3'
 gem 'actionmailer', '7.0.3'
@@ -35,7 +34,6 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]

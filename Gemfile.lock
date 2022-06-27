@@ -11,16 +11,6 @@ GEM
       net-imap
       net-pop
       net-smtp
-    actionmailer (7.0.3)
-      actionpack (= 7.0.3)
-      actionview (= 7.0.3)
-      activejob (= 7.0.3)
-      activesupport (= 7.0.3)
-      mail (~> 2.5, >= 2.5.4)
-      net-imap
-      net-pop
-      net-smtp
-      rails-dom-testing (~> 2.0)
     actionpack (7.0.3)
       actionview (= 7.0.3)
       activesupport (= 7.0.3)
@@ -202,7 +192,6 @@ PLATFORMS
 
 DEPENDENCIES
   actionmailbox (= 7.0.3)
-  actionmailer (= 7.0.3)
   actionpack (= 7.0.3)
   actiontext (= 7.0.3)
   actionview (= 7.0.3)

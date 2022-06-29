@@ -18,6 +18,21 @@ jobs:
           bundle exec bundler-audit update
           bundle exec bundler-audit check
 
+  Brakeman:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby and Install Gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Check Security Vulnerabilities
+        run: |
+          bundle exec brakeman
+
   RSpec:
     runs-on: ubuntu-18.04
     services:

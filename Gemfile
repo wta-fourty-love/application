@@ -68,4 +68,5 @@ group :test do
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 6.0.0.rc1'
   gem 'shoulda-matchers', '~> 5.0'
+  gem 'simplecov', require: false
 end

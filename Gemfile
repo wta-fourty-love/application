@@ -29,9 +29,6 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
-
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

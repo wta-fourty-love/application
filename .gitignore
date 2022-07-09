@@ -24,3 +24,6 @@
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
+
+# Multi Environment Encrypted Secure Credentials keys:
+/config/credentials/production.key

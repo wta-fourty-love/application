@@ -4,15 +4,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 # Rails Core libraries:
-gem 'activerecord', '7.0.3'
-gem 'activemodel', '7.0.3'
-gem 'actionpack', '7.0.3'
-gem 'actiontext', '7.0.3'
-gem 'activejob', '7.0.3'
-gem 'activestorage', '7.0.3'
-gem 'activesupport', '7.0.3'
-gem 'actionview', '7.0.3'
-gem 'railties', '7.0.3'
+gem 'activerecord', '7.0.3.1'
+gem 'activemodel', '7.0.3.1'
+gem 'actionpack', '7.0.3.1'
+gem 'actiontext', '7.0.3.1'
+gem 'activejob', '7.0.3.1'
+gem 'activestorage', '7.0.3.1'
+gem 'activesupport', '7.0.3.1'
+gem 'actionview', '7.0.3.1'
+gem 'railties', '7.0.3.1'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"

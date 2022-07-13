@@ -31,6 +31,10 @@ gem "bootsnap", require: false
 # Validations:
 gem 'dry-validation'
 
+# Code style and formatting
+gem 'rubocop', '~> 1.31', '>= 1.31.2', require: false
+gem 'rubocop-rspec', '~> 2.12', '>= 2.12.1', require: false
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'

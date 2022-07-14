@@ -10,10 +10,8 @@ jobs:
 
       - name: Setup Ruby and Install Gems
         uses: ruby/setup-ruby@v1
-        run: |
-          bundle lock --add-platform x86_64-linux
-          bundle install
 
       - name: Check Security Vulnerabilities
         run: |
+          bundle lock --add-platform x86_64-linux
           bundle exec brakeman

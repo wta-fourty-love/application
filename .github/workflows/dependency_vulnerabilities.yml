@@ -10,11 +10,9 @@ jobs:
 
       - name: Setup Ruby and Install Gems
         uses: ruby/setup-ruby@v1
-        run: |
-          bundle lock --add-platform x86_64-linux
-          bundle install
 
       - name: Verify Bundler
         run: |
+          bundle lock --add-platform x86_64-linux
           bundle exec bundler-audit update
           bundle exec bundler-audit check

@@ -13,6 +13,7 @@ jobs:
 
       - name: Verify Bundler
         run: |
+          bundle install
           bundle lock --add-platform x86_64-linux
           bundle exec bundler-audit update
           bundle exec bundler-audit check

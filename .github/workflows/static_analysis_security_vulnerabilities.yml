@@ -13,5 +13,6 @@ jobs:
 
       - name: Check Security Vulnerabilities
         run: |
+          bundle install
           bundle lock --add-platform x86_64-linux
           bundle exec brakeman

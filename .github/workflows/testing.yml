@@ -24,8 +24,6 @@ jobs:
 
       - name: Setup Ruby and Install Gems
         uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
 
       - name: Build and Run Tests
         env:
@@ -34,6 +32,8 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         run: |
+          bundle install
+          bundle lock --add-platform x86_64-linux
           sudo apt-get -yqq install libpq-dev
           bundle exec rails db:prepare
           bundle exec rspec spec

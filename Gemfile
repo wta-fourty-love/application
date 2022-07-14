@@ -39,6 +39,7 @@ end
 group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
+  gem 'license_finder'
   gem 'pry', '~> 0.13.1'
 end
 

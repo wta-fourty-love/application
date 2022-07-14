@@ -1,8 +1,8 @@
-name: Dependency Vulnerabilities
+name: Allowed Dependency Licensing
 on: [push]
 
 jobs:
-  BundlerAudit:
+  LicenseFinder:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout Code
@@ -11,9 +11,9 @@ jobs:
       - name: Setup Ruby and Install Gems
         uses: ruby/setup-ruby@v1
 
-      - name: Verify Bundler
+      - name: Check Allowed Licenses
         run: |
           bundle install
           bundle lock --add-platform x86_64-linux
-          bundle exec bundler-audit update
-          bundle exec bundler-audit check
+          bundle exec license_finder permitted_licenses add "MIT" "Brakeman Public Use License" "GPL-3.0+" "Apache 2.0" "Simplified BSD" "New BSD"
+          bundle exec license_finder

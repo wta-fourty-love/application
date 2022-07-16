@@ -9,7 +9,9 @@ RSpec.describe Countries::Entities::Country do
       expect(Country.last).to have_attributes(
         id: country.id,
         name: 'poland',
-        iso_code: 'pl'
+        iso_code: 'pl',
+        created_at: country.created_at,
+        updated_at: country.updated_at
       )
     end
   end

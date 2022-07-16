@@ -1,4 +1,4 @@
-require 'spec_config'
+require 'spec_configuration'
 
 RSpec.describe Tournament do
   describe 'database columns' do

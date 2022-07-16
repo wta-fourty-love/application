@@ -1,4 +1,4 @@
-require 'spec_config'
+require 'spec_configuration'
 
 RSpec.describe Season do
   describe 'database columns' do

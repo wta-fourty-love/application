@@ -1,5 +1,3 @@
-require 'spec_configuration'
-
 RSpec.describe Tournament do
   describe 'database columns' do
     it { should have_db_column(:name).of_type(:string) }

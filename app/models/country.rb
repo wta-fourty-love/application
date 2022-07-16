@@ -1,4 +1,3 @@
-# frozen_string_literal: true
-
-class Country < ApplicationRecord
+class Country < ActiveRecord::Base
+  has_many :tournaments
 end

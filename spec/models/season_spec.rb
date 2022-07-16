@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-require 'spec_config'
-
 RSpec.describe Season do
   describe 'database columns' do
     it { should have_db_column(:year).of_type(:integer).with_options(null: false) }

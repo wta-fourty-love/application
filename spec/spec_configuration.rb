@@ -17,6 +17,7 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
+  #config.profile_examples = 10
 
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
@@ -31,8 +32,6 @@ RSpec.configure do |config|
   if config.files_to_run.one?
     config.default_formatter = "doc"
   end
-
-  config.profile_examples = 10
 end
 
 Shoulda::Matchers.configure do |config|

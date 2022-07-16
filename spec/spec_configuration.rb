@@ -11,6 +11,7 @@ end
 
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
+  config.use_active_record = true
   config.fail_fast = 1
   config.order = :random
   config.use_transactional_fixtures = true

@@ -1,2 +1,2 @@
-class Season < ApplicationRecord
+class Season < ActiveRecord::Base
 end

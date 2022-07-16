@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 
 begin
@@ -19,7 +21,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   config.shared_context_metadata_behavior = :apply_to_host_groups
   config.disable_monkey_patching!
-  #config.profile_examples = 10
+  # config.profile_examples = 10
 
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true

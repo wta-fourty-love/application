@@ -1,0 +1,19 @@
+name: Dependency Vulnerabilities
+on: [push]
+
+jobs:
+  BundlerAudit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby and Install Gems
+        uses: ruby/setup-ruby@v1
+
+      - name: Verify Bundler
+        run: |
+          bundle install
+          bundle lock --add-platform x86_64-linux
+          bundle exec bundler-audit update
+          bundle exec bundler-audit check

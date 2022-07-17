@@ -9,6 +9,11 @@ rescue ActiveRecord::PendingMigrationError => e
   abort e.to_s.strip
 end
 
+require 'simplecov'
+SimpleCov.start do
+  minimum_coverage 90
+end
+
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.use_active_record = true

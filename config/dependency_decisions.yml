@@ -24,3 +24,16 @@
 - - :permit
   - New BSD
   - *1
+- - :permit
+  - json
+  - &2
+    :who:
+    :why:
+    :versions: []
+    :when: 2022-07-17 10:10:33.022115001 Z
+- - :permit
+  - 2.6.2
+  - *2
+- - :permit
+  - ruby
+  - *2

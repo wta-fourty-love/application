@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Countries::Entities::Country do
   let!(:country) { create(:country) }
 

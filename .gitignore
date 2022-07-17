@@ -21,6 +21,10 @@
 # Multi Environment Encrypted Secure Credentials keys:
 /config/credentials/production.key
 
+# Ignore dart-sass related stuff
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
 # Ignore JetBrains IDEs config files
 .idea
 

@@ -1,64 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/tmt/wta-tennis-app/spec/factories/country.rb": {
-        "lines": [
-          1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/home/tmt/wta-tennis-app/spec/factories/season.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/tmt/wta-tennis-app/spec/factories/tournament.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/tmt/wta-tennis-app/config/routes.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/home/tmt/wta-tennis-app/spec/api/countries/entities/country_spec.rb": {
         "lines": [
           1,
-          2,
-          null,
           1,
-          2,
           null,
           1,
           1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null
         ]
@@ -71,7 +20,7 @@
           1,
           null,
           1,
-          1,
+          0,
           null,
           null,
           null,
@@ -143,6 +92,6 @@
         ]
       }
     },
-    "timestamp": 1658049037
+    "timestamp": 1658049421
   }
 }

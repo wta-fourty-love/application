@@ -46,6 +46,7 @@ GEM
     crass (1.0.6)
     debug_inspector (1.1.0)
     diff-lcs (1.5.0)
+    docile (1.4.0)
     dry-configurable (0.15.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.6)
@@ -176,6 +177,12 @@ GEM
     rubyzip (2.3.2)
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
+    simplecov (0.21.2)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     thor (1.2.1)
@@ -220,6 +227,7 @@ DEPENDENCIES
   rubocop (~> 1.31, >= 1.31.2)
   rubocop-rspec (~> 2.12, >= 2.12.1)
   shoulda-matchers (~> 5.0)
+  simplecov
   stimulus-rails
   turbo-rails
 

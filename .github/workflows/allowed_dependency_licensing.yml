@@ -15,5 +15,5 @@ jobs:
         run: |
           bundle install
           bundle lock --add-platform x86_64-linux
-          bundle exec license_finder permitted_licenses add "MIT" "Brakeman Public Use License" "GPL-3.0+" "Apache 2.0" "Simplified BSD" "New BSD"
+          bundle exec license_finder permitted_licenses add "MIT" "Brakeman Public Use License" "GPL-3.0+" "Apache 2.0" "Simplified BSD" "New BSD" "json" "2.6.2" "ruby"
           bundle exec license_finder

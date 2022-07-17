@@ -25,4 +25,4 @@
 .idea
 
 # Ignore SimpleCov coverage files
-/coverage/
+coverage/

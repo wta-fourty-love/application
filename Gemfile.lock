@@ -141,7 +141,6 @@ GEM
     rake (13.0.6)
     regexp_parser (2.5.0)
     rexml (3.2.5)
-    rexml (3.2.5)
     rspec-core (3.11.0)
       rspec-support (~> 3.11.0)
     rspec-expectations (3.11.0)
@@ -159,7 +158,6 @@ GEM
       rspec-mocks (~> 3.11)
       rspec-support (~> 3.11)
     rspec-support (3.11.0)
-    rubyzip (2.3.2)
     rubocop (1.31.2)
       json (~> 2.3)
       parallel (~> 1.10)
@@ -175,6 +173,7 @@ GEM
     rubocop-rspec (2.12.1)
       rubocop (~> 1.31)
     ruby-progressbar (1.11.0)
+    rubyzip (2.3.2)
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
     stimulus-rails (1.0.4)
@@ -187,10 +186,10 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    unicode-display_width (2.2.0)
     with_env (1.1.0)
     xml-simple (1.1.9)
       rexml
-    unicode-display_width (2.2.0)
     zeitwerk (2.6.0)
 
 PLATFORMS

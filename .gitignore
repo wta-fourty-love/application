@@ -23,3 +23,6 @@
 
 # Ignore JetBrains IDEs config files
 .idea
+
+# Ignore SimpleCov coverage files
+/coverage/

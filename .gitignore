@@ -20,3 +20,6 @@
 
 # Multi Environment Encrypted Secure Credentials keys:
 /config/credentials/production.key
+
+# Ignore JetBrains IDEs config files
+.idea

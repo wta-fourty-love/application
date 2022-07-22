@@ -13,44 +13,44 @@ gem 'activesupport', '7.0.3.1'
 gem 'railties', '7.0.3.1'
 
 # Postgres Database adapter for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg', '1.4.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '~> 5.0'
+gem 'puma', '5.6.4'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails],
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev],
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem 'importmap-rails'
-gem 'stimulus-rails'
-gem 'turbo-rails'
+gem 'importmap-rails', '1.1.2'
+gem 'stimulus-rails', '1.0.4'
+gem 'turbo-rails', '1.1.1'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', require: false
+gem 'bootsnap', '1.12.0', require: false
 
-# Validations:
-gem 'dry-validation'
+# validations / contracts:
+gem 'dry-validation', '1.8.1'
 
-# Code style and formatting
-gem 'rubocop', '~> 1.31', '>= 1.31.2', require: false
-gem 'rubocop-rspec', '~> 2.12', '>= 2.12.1', require: false
+# code style and formatting
+gem 'rubocop', '1.31.2', require: false
+gem 'rubocop-rspec', '2.12.1', require: false
 
 group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
+  gem 'better_errors', '2.9.1'
+  gem 'binding_of_caller', '1.0.0'
 end
 
 group :development, :test do
-  gem 'brakeman'
-  gem 'bundler-audit'
-  gem 'license_finder'
-  gem 'pry', '~> 0.13.1'
+  gem 'brakeman', '5.2.3'
+  gem 'bundler-audit', '0.9.1'
+  gem 'license_finder', '7.0.1'
+  gem 'pry', '0.13.1'
 end
 
 group :test do
-  gem 'factory_bot_rails'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails', '~> 6.0.0.rc1'
-  gem 'shoulda-matchers', '~> 5.0'
-  gem 'simplecov', require: false
+  gem 'factory_bot_rails', '6.2.0'
+  gem 'rails-controller-testing', '1.0.5'
+  gem 'rspec-rails', '6.0.0.rc1'
+  gem 'shoulda-matchers', '5.1.0'
+  gem 'simplecov', '0.21.2', require: false
 end

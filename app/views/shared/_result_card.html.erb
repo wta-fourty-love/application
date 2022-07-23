@@ -1,0 +1,25 @@
+<li class="result-card">
+  <section class="result-card__section">
+    <h3 class="result-card__player"><%= match[:players].first[:name] %></h3>
+    <% match[:players].first[:stats].each do |k, v| %>
+      <div class="result-card__stat-container">
+        <span><%= t("stats.#{k}") %>:</span>
+        <strong><%= v %></strong>
+      </div>
+    <% end %>
+  </section>
+  <section class="result-card__section result-card__section--score">
+    <strong class="result-card__score">
+      <span><%= match[:players].first[:score] %></span> : <span><%= match[:players].last[:score]  %></span>
+    </strong>
+  </section>
+  <section class="result-card__section result-card__section--right-player">
+    <h3 class="result-card__player"><%= match[:players].last[:name] %></h3>
+    <% match[:players].last[:stats].each do |k, v| %>
+      <div class="result-card__stat-container">
+        <span><%= t("stats.#{k}") %>:</span>
+        <strong><%= v %></strong>
+      </div>
+    <% end %>
+  </section>
+</li>

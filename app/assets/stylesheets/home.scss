@@ -1,10 +1,89 @@
+@import 'variables';
+
 .home {
   display: grid;
   grid-template-columns: 15fr 60fr 25fr;
   width: 100%;
   height: calc(100% - 80px);
 
-  &__filters {
-    border-right: 1px solid black;
+  .filters {
+    padding: 16px;
+    border-right: $main-border;
+  }
+
+  .results {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__list {
+      margin-top: 16px;
+      border: $main-border;
+      border-radius: 8px;
+      width: 100%;
+      height: 80%;
+      padding: 16px;
+    }
+  }
+
+  .feed {
+    padding: 16px;
+    border-left: $main-border;
+
+    &__section-title {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+
+    &__section {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.result-card {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  padding: 32px;
+  background: $main-background;
+  border-radius: 8px;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    &--right-player {
+      align-items: flex-end;
+    }
+
+    &--score {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__score {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.live-card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 32px;
+  background: $main-background;
+  border-radius: 8px;
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    &--score {
+      font-weight: 700;
+    }
   }
 }

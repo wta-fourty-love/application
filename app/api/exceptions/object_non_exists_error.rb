@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
 module Exceptions
-    class ObjectNonExistsError < StandardError; end
-  end
+  class ObjectNonExistsError < StandardError; end
 end

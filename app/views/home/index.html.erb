@@ -3,7 +3,36 @@
 <% end %>
 
 <div class="home">
-  <section class="home__filters"></section>
-  <section class="home__games"></section>
-  <section class="home__feed"></section>
+  <article class="filters">
+    <h3>Court Type</h3>
+    <ul>
+      <li>Grass</li>
+      <li>Clay</li>
+      <li>Hard</li>
+    </ul>
+  </article>
+  <article class="results">
+    <h2 class=""><%= t('latest_results') %></h2>
+    <ul class="results__list">
+      <% @matches.each do |match| %>
+        <%= render('shared/result_card', match:) %>
+      <% end %>
+    </ul>
+  </article>
+  <article class="feed">
+    <section class="feed__section">
+      <h2 class="feed__section-title">Live Scores</h2>
+      <ul>
+        <% @live_matches.each do |match| %>
+          <%= render('shared/live_game_card', match:) %>
+        <% end %>
+      </ul>
+    </section>
+    <section class="feed__section">
+      <h2 class="feed__section-title"><%= t('news_feed') %></h2>
+      <!-- TODO: Replace that with dynamically generated ones, this is just for testing -->
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bernarda can‘t stop smiling 😁 Congrats to our 2022 Womens Champion <a href="https://twitter.com/bernarda_pera?ref_src=twsrc%5Etfw">@bernarda_pera</a> 🏆🔥<a href="https://twitter.com/WTA?ref_src=twsrc%5Etfw">@WTA</a> | <a href="https://twitter.com/hashtag/hamburopen?src=hash&amp;ref_src=twsrc%5Etfw">#hamburopen</a> <a href="https://t.co/Qt5FyqHxNQ">pic.twitter.com/Qt5FyqHxNQ</a></p>&mdash; Hamburg European Open 〽️ (@hamburgopen) <a href="https://twitter.com/hamburgopen/status/1550829549004460035?ref_src=twsrc%5Etfw">July 23, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <iframe id="reddit-embed" src="https://www.redditmedia.com/r/tennis/comments/w641dr/most_consecutive_weeks_as_wta_world_number_1_in/?ref_source=embed&amp;ref=share&amp;embed=true&amp;showmedia=false" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="140" width="100%" scrolling="no"></iframe>
+    </section>
+  </article>
 </div>

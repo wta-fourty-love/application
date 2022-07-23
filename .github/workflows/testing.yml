@@ -31,6 +31,7 @@ jobs:
           RAILS_ENV: test
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+          RAILS_MASTER_KEY: ${{ secrets.ENCRYPTED_CREDENTIALS_TEST_RAILS_MASTER_KEY }}
         run: |
           bundle install
           bundle lock --add-platform x86_64-linux

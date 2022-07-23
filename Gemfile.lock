@@ -38,6 +38,9 @@ GEM
       msgpack (~> 1.2)
     brakeman (5.2.3)
     builder (3.2.4)
+    bullet (7.0.2)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     bundler-audit (0.9.1)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
@@ -191,6 +194,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    slack-notifier (2.4.0)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     thor (1.2.1)
@@ -202,6 +206,7 @@ GEM
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.2.0)
+    uniform_notifier (1.16.0)
     with_env (1.1.0)
     xml-simple (1.1.9)
       rexml
@@ -217,29 +222,31 @@ DEPENDENCIES
   activemodel (= 7.0.3.1)
   activerecord (= 7.0.3.1)
   activesupport (= 7.0.3.1)
-  better_errors
-  binding_of_caller
-  bootsnap
-  brakeman
-  bundler-audit
-  dry-validation
-  factory_bot_rails
+  better_errors (= 2.9.1)
+  binding_of_caller (= 1.0.0)
+  bootsnap (= 1.12.0)
+  brakeman (= 5.2.3)
+  bullet (= 7.0.2)
+  bundler-audit (= 0.9.1)
+  dry-validation (= 1.8.1)
+  factory_bot_rails (= 6.2.0)
   foreman
-  importmap-rails
-  license_finder
-  pg (~> 1.1)
-  pry (~> 0.13.1)
-  puma (~> 5.0)
-  rails-controller-testing
+  importmap-rails (= 1.1.2)
+  license_finder (= 7.0.1)
+  pg (= 1.4.1)
+  pry (= 0.13.1)
+  puma (= 5.6.4)
+  rails-controller-testing (= 1.0.5)
   railties (= 7.0.3.1)
-  rspec-rails (~> 6.0.0.rc1)
-  rubocop (~> 1.31, >= 1.31.2)
-  rubocop-rspec (~> 2.12, >= 2.12.1)
-  shoulda-matchers (~> 5.0)
-  simplecov
+  rspec-rails (= 6.0.0.rc1)
+  rubocop (= 1.31.2)
+  rubocop-rspec (= 2.12.1)
+  shoulda-matchers (= 5.1.0)
+  simplecov (= 0.21.2)
+  slack-notifier (= 2.4.0)
   sprockets-rails
-  stimulus-rails
-  turbo-rails
+  stimulus-rails (= 1.0.4)
+  turbo-rails (= 1.1.1)
 
 RUBY VERSION
    ruby 3.1.2p20

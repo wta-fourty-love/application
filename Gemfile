@@ -13,7 +13,10 @@ gem 'activesupport', '7.0.3.1'
 gem 'railties', '7.0.3.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
+
+# SASS processor
+gem 'dartsass-rails', '~> 0.4.0'
 
 # Postgres Database adapter for Active Record
 gem 'pg', '1.4.1'

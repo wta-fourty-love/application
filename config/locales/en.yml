@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  latest_results: "Latest Results"
+  live_scores: "Live Scores"
+  news_feed: "News Feed"
+  stats:
+    some_stat_1: "Some stat 1"
+    some_stat_2: "Some stat 2"

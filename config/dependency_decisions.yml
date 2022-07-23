@@ -1,0 +1,39 @@
+---
+- - :permit
+  - MIT
+  - :who:
+    :why:
+    :versions: []
+    :when: 2022-07-14 19:24:22.571678820 Z
+- - :permit
+  - Brakeman Public Use License
+  - &1
+    :who:
+    :why:
+    :versions: []
+    :when: 2022-07-14 19:26:37.636418034 Z
+- - :permit
+  - GPL-3.0+
+  - *1
+- - :permit
+  - Apache 2.0
+  - *1
+- - :permit
+  - Simplified BSD
+  - *1
+- - :permit
+  - New BSD
+  - *1
+- - :permit
+  - json
+  - &2
+    :who:
+    :why:
+    :versions: []
+    :when: 2022-07-17 10:10:33.022115001 Z
+- - :permit
+  - 2.6.2
+  - *2
+- - :permit
+  - ruby
+  - *2

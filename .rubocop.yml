@@ -1,0 +1,22 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+  NewCops: enable
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'db/migrate/*'
+    - 'Gemfile'
+
+Style/Documentation:
+  Enabled: false
+
+Lint/MissingSuper:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 145
+
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context']

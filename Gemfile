@@ -13,7 +13,10 @@ gem 'activesupport', '7.0.3.1'
 gem 'railties', '7.0.3.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
-gem "sprockets-rails"
+gem 'sprockets-rails', '~> 3.4', '>= 3.4.2'
+
+# SASS processor
+gem 'dartsass-rails', '~> 0.4.0'
 
 # Postgres Database adapter for Active Record
 gem 'pg', '~> 1.1'
@@ -39,9 +42,9 @@ gem 'rubocop', '~> 1.31', '>= 1.31.2', require: false
 gem 'rubocop-rspec', '~> 2.12', '>= 2.12.1', require: false
 
 group :development do
-  gem 'foreman'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'foreman'
 end
 
 group :development, :test do

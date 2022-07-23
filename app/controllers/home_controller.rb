@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class HomeController < ApplicationController
+  # rubocop:disable Metrics/MethodLength, Naming/VariableNumber
   def index
     @matches = [
       {
@@ -34,4 +35,5 @@ class HomeController < ApplicationController
       }
     ]
   end
+  # rubocop:enable Metrics/MethodLength, Naming/VariableNumber
 end

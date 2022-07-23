@@ -45,10 +45,10 @@ gem 'rubocop-rspec', '2.12.1', require: false
 gem 'slack-notifier', '2.4.0'
 
 group :development do
-  gem 'foreman'
   gem 'better_errors', '2.9.1'
   gem 'binding_of_caller', '1.0.0'
   gem 'bullet', '7.0.2'
+  gem 'foreman'
 end
 
 group :development, :test do

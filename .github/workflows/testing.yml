@@ -1,40 +1,9 @@
-name: Continuous-Integration
+name: Testing
 on: [push]
 
 jobs:
-  BundlerAudit:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Setup Ruby and Install Gems
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - name: Verify Bundler
-        run: |
-          bundle exec bundler-audit update
-          bundle exec bundler-audit check
-
-  Brakeman:
-    runs-on: ubuntu-18.04
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Setup Ruby and Install Gems
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-
-      - name: Check Security Vulnerabilities
-        run: |
-          bundle exec brakeman
-
   RSpec:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     services:
       postgres:
         image: postgres:12
@@ -55,8 +24,6 @@ jobs:
 
       - name: Setup Ruby and Install Gems
         uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
 
       - name: Build and Run Tests
         env:
@@ -64,7 +31,10 @@ jobs:
           RAILS_ENV: test
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+          RAILS_MASTER_KEY: ${{ secrets.ENCRYPTED_CREDENTIALS_TEST_RAILS_MASTER_KEY }}
         run: |
+          bundle install
+          bundle lock --add-platform x86_64-linux
           sudo apt-get -yqq install libpq-dev
           bundle exec rails db:prepare
           bundle exec rspec spec

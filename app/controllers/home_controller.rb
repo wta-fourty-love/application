@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class HomeController < ApplicationController
+class HomeController < ::ApiController
   # rubocop:disable Metrics/MethodLength, Naming/VariableNumber
   def index
     # TODO: Delete once mock data is not needed. THIS IS JUST FOR TESTING

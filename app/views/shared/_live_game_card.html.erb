@@ -1,0 +1,12 @@
+<li class="live-card">
+  <section class="live-card__section">
+    <span><%= match[:players].first[:name] %></span>
+    <span>vs</span>
+    <span><%= match[:players].last[:name] %></span>
+  </section>
+  <section class="live-card__section live-card__section--score">
+    <span><%= match[:players].first[:score] %></span>
+    <span></span>
+    <span><%= match[:players].last[:score] %></span>
+  </section>
+</li>

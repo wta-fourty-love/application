@@ -9,4 +9,22 @@
   height: 100vh;
   width: 100vw;
   padding: 0 64px;
+
+  &__header {
+    height: 80px;
+    padding: 16px;
+    border-radius: 8px;
+    background: $main-background;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
 }

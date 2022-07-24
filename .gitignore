@@ -26,3 +26,7 @@
 
 # Ignore SimpleCov coverage files
 coverage/
+
+# Ignore dartsass built files
+/app/assets/builds/*
+!/app/assets/builds/.keep

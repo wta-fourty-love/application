@@ -1,0 +1,8 @@
+pl:
+  latest_results: "Ostatnie wyniki"
+  live_scores: "Wyniki na żywo"
+    news_feed: "Wiadomości"
+    stats:
+      #    TODO: Change that into correct stats, this is just for mock data
+      some_stat_1: "Pewna statystyka 1"
+      some_stat_2: "Pewna statystyka 2"

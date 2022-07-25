@@ -34,6 +34,6 @@ en:
   live_scores: "Live Scores"
   news_feed: "News Feed"
   stats:
-    #    TODO: Change that into correct stats, this is just for mock data
+    # TODO: Change that into correct stats, this is just for mock data
     some_stat_1: "Some stat 1"
     some_stat_2: "Some stat 2"

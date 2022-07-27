@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 RSpec.describe SeasonsController do
-  describe 'POST #add' do
-    subject { post :add, params: }
+  describe 'POST #create' do
+    subject { post :create, params: }
 
     it 'returns 200' do
       expect(response).to have_http_status(200)

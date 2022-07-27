@@ -5,5 +5,6 @@ FactoryBot.define do
     name { 'Veri big tournament' }
     city { 'Veri best city' }
     editions_count { 0 }
+    country_id { create(:country).id }
   end
 end

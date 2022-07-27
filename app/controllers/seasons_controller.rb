@@ -2,7 +2,7 @@
 
 class SeasonsController < ApiController
   def create
-    Seasons::Commands::Add.new(params).call
+    Seasons::Commands::Create.new(params).call
     render json: {}
   end
 end

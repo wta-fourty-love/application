@@ -3,7 +3,7 @@
 module Seasons
   module Commands
     module Contracts
-      class AddContract < ::Contracts::ApplicationContract
+      class CreateContract < ::Contracts::ApplicationContract
         params do
           required(:year).filled(:integer)
         end

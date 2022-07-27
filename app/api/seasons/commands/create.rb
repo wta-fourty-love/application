@@ -2,7 +2,7 @@
 
 module Seasons
   module Commands
-    class Add
+    class Create
       def initialize(params)
         @params_hash = parse_params(params)
       end
@@ -19,7 +19,7 @@ module Seasons
       end
 
       def validate
-        ::Contracts::ApplicationContract.validate_with!(Seasons::Commands::Contracts::AddContract, params: @params_hash)
+        ::Contracts::ApplicationContract.validate_with!(Seasons::Commands::Contracts::CreateContract, params: @params_hash)
       end
     end
   end

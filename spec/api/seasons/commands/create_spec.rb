@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Seasons::Commands::Add do
+RSpec.describe Seasons::Commands::Create do
   subject { described_class.new(params).call }
 
   describe '#call' do

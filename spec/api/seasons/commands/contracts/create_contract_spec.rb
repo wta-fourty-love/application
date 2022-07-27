@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe Seasons::Commands::Contracts::AddContract do
+RSpec.describe Seasons::Commands::Contracts::CreateContract do
   subject { described_class.new.call(params) }
 
   describe '#validate_with' do

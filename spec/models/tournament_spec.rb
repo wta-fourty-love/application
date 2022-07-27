@@ -11,5 +11,6 @@ RSpec.describe Tournament do
 
   describe 'relations' do
     it { should belong_to(:country) }
+    it { should have_many(:tournament_editions) }
   end
 end

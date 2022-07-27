@@ -41,6 +41,9 @@ gem 'rubocop-rspec', '2.12.1', require: false
 # Slack integration:
 gem 'slack-notifier', '2.4.0'
 
+# SASS processor
+gem 'dartsass-rails', '0.4.0'
+
 group :development do
   gem 'better_errors', '2.9.1'
   gem 'binding_of_caller', '1.0.0'

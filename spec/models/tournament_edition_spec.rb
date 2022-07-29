@@ -8,7 +8,7 @@ RSpec.describe TournamentEdition do
     it { should have_db_column(:updated_at).of_type(:datetime).with_options(null: false, precision: 6) }
   end
 
-  describe 'relations' do
+  describe 'relationships' do
     it { should belong_to(:tournament) }
     it { should belong_to(:season) }
   end

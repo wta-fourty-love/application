@@ -22,3 +22,9 @@ Layout/LineLength:
 
 Metrics/BlockLength:
   IgnoredMethods: ['describe', 'context']
+  Exclude:
+    - 'db/migrate/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*'

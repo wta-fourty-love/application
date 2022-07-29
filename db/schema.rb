@@ -26,7 +26,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_29_220203) do
     t.string "last_name"
     t.date "born_on"
     t.string "place_of_birth"
-    t.float "height"
+    t.decimal "height", precision: 3, scale: 2
     t.boolean "active", default: true
     t.string "wikipedia_url"
     t.bigint "country_id"

@@ -5,7 +5,7 @@ class CreatePlayers < ActiveRecord::Migration[7.0]
       t.string :last_name
       t.date :born_on
       t.string :place_of_birth
-      t.float :height, precision: 3, scale: 2
+      t.decimal :height, precision: 3, scale: 2
       t.boolean :active, default: true
       t.string :wikipedia_url
       t.references :country, foreign_key: true

@@ -8,7 +8,8 @@ RSpec.describe Country do
     it { should have_db_column(:updated_at).of_type(:datetime).with_options(null: false, precision: 6) }
   end
 
-  describe 'relations' do
+  describe 'relationships' do
+    it { should have_many(:players) }
     it { should have_many(:tournaments) }
   end
 end

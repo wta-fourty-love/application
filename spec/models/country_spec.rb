@@ -9,6 +9,7 @@ RSpec.describe Country do
   end
 
   describe 'relationships' do
+    it { should have_many(:players) }
     it { should have_many(:tournaments) }
   end
 end

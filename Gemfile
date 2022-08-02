@@ -42,8 +42,8 @@ gem 'rubocop-rspec', '2.12.1', require: false
 gem 'slack-notifier', '2.4.0'
 
 # Sentry monitoring integration:
-gem 'sentry-ruby', '5.4.1'
 gem 'sentry-rails', '5.4.1'
+gem 'sentry-ruby', '5.4.1'
 # TODO: add after Sidekiq integration:
 # gem 'sentry-sidekiq'
 

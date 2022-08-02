@@ -34,7 +34,13 @@ gem 'bootsnap', '1.12.0', require: false
 # validations / contracts:
 gem 'dry-validation', '1.8.1'
 
-# code style and formatting
+# class initialization:
+gem 'dry-initializer', '3.1.1'
+
+# type system:
+gem 'dry-types', '1.5.1'
+
+# code style and formatting:
 gem 'rubocop', '1.31.2', require: false
 gem 'rubocop-rspec', '2.12.1', require: false
 
@@ -47,7 +53,7 @@ gem 'sentry-ruby', '5.4.1'
 # TODO: add after Sidekiq integration:
 # gem 'sentry-sidekiq'
 
-# SASS processor
+# SASS processing:
 gem 'dartsass-rails', '0.4.0'
 
 group :development do

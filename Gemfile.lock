@@ -235,6 +235,8 @@ DEPENDENCIES
   bullet (= 7.0.2)
   bundler-audit (= 0.9.1)
   dartsass-rails (= 0.4.0)
+  dry-initializer (= 3.1.1)
+  dry-types (= 1.5.1)
   dry-validation (= 1.8.1)
   factory_bot_rails (= 6.2.0)
   importmap-rails (= 1.1.2)

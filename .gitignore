@@ -19,7 +19,7 @@
 !/tmp/pids/.keep
 
 # Multi Environment Encrypted Secure Credentials keys:
-#/config/credentials/staging.key
+/config/credentials/staging.key
 /config/credentials/production.key
 
 # Ignore JetBrains IDEs config files

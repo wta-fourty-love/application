@@ -37,6 +37,9 @@ gem 'dry-validation', '1.8.1'
 # class initialization:
 gem 'dry-initializer', '3.1.1'
 
+# type system:
+gem 'dry-types', '1.5.1'
+
 # code style and formatting:
 gem 'rubocop', '1.31.2', require: false
 gem 'rubocop-rspec', '2.12.1', require: false
